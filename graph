@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdbool.h>
+　
+typedef struct graph
+{
+  int vertices;			// Anzahl der Kanten
+  int nodes;			// Anzahl der Knoten
+  bool directed;		// gibt an, ob der Graph gerichtet (true) oder ungerichtet (false) ist
+}graph;
+　
+/* Funktionen fuer Graphen-Klasse */
+graph *graph_create (int n, bool directed)
+{
+  graph->vertices = n;
+  graph->directed = directed;
+}
+　
+/*
+void graph_print (graph * g);
+　
+void graph_add_edge (graph * g, int source, int target);
+　
+void graph_remove_edge (graph * g, int source, int target);
+　
+int graph_remove_vertex (graph g *);
+　
+void graph_free (graph * g);
+*/
+　
+// Main
+int main ()
+{
+// Graph erstellen
+  graph g;
+  int n;
+  n=2;
+  g = graph_create (n, true);
+　
+// Ausgabe der Knotenanzahl
+  printf ("Der Graph hat %i Knoten.", g.vertices);
+　
+}
